@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>svg/add_normal.svg</file>
+        <file>svg/add_disabled.svg</file>
+        <file>svg/remove_normal.svg</file>
+        <file>svg/remove_disabled.svg</file>
+        <file>svg/edit_normal.svg</file>
+        <file>svg/edit_disabled.svg</file>
+        <file>svg/check_normal.svg</file>
+        <file>svg/check_disabled.svg</file>
+        <file>svg/refresh_normal.svg</file>
+        <file>svg/refresh_disabled.svg</file>
+        <file>svg/library_normal.svg</file>
+        <file>svg/library_disabled.svg</file>
+        <file>svg/folder_normal.svg</file>
+        <file>svg/folder_disabled.svg</file>
+        <file>svg/filepack_normal.svg</file>
+        <file>svg/filepack_disabled.svg</file>
+        <file>svg/search_normal.svg</file>
+        <file>svg/search_disabled.svg</file>
+        <file>svg/unknown_file.svg</file>
+        <file>svg/warning.svg</file>
+        <file>svg/splitter_horizontal.svg</file>
+        <file>svg/splitter_vertical.svg</file>
+        <file>svg/irrelevant.svg</file>
+        <file>svg/necessary.svg</file>
+        <file>svg/excluded.svg</file>
+        <file>svg/query_disabled.svg</file>
+        <file>svg/query_normal.svg</file>
+        <file>svg/stream_left.svg</file>
+    </qresource>
+</RCC>

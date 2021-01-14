@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>chongying_zh_CN.qm</file>
+        <file>zh_CN.qm</file>
+    </qresource>
+</RCC>

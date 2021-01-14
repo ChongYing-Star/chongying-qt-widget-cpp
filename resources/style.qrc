@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/Styles">
+        <file alias="IconButton">Styles/IconButton.qss</file>
+        <file alias="NameInput">Styles/NameInput.qss</file>
+        <file alias="MoveHandle">Styles/MoveHandle.qss</file>
+        <file alias="IconButtonHeader">Styles/IconButtonHeader.qss</file>
+    </qresource>
+</RCC>

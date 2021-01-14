@@ -1,0 +1,43 @@
+chongying--IconButton {
+  padding: 3 1;
+  icon-size: 15px 15px;
+}
+
+chongying--IconButton:!hover{
+  background: transparent;
+}
+
+chongying--IconButton.Add {
+  qproperty-iconNormal: ":/svg/add_normal.svg";
+  qproperty-iconDisabled: ":/svg/add_disabled.svg";
+}
+
+chongying--IconButton.Remove {
+  qproperty-iconNormal: ":/svg/remove_normal.svg";
+  qproperty-iconDisabled: ":/svg/remove_disabled.svg";
+}
+
+chongying--IconButton.Edit {
+  qproperty-iconNormal: ":/svg/edit_normal.svg";
+  qproperty-iconDisabled: ":/svg/edit_disabled.svg";
+}
+
+chongying--IconButton.Check {
+  qproperty-iconNormal: ":/svg/check_normal.svg";
+  qproperty-iconDisabled: ":/svg/check_disabled.svg";
+}
+
+chongying--IconButton.Search {
+  qproperty-iconNormal: ":/svg/search_normal.svg";
+  qproperty-iconDisabled: ":/svg/search_disabled.svg";
+}
+
+chongying--IconButton.Refresh {
+  qproperty-iconNormal: ":/svg/refresh_normal.svg";
+  qproperty-iconDisabled: ":/svg/refresh_disabled.svg";
+}
+
+chongying--IconButton.Query {
+  qproperty-iconNormal: ":/svg/query_normal.svg";
+  qproperty-iconDisabled: ":/svg/query_disabled.svg";
+}

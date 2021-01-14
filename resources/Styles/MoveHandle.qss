@@ -1,0 +1,14 @@
+chongying--MoveHandle {
+  min-width: 7px;
+  min-height: 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+chongying--MoveHandle.Horizontal{
+  background-image: url(:/svg/splitter_vertical.svg);
+}
+
+chongying--MoveHandle.Vertical {
+  background-image: url(:/svg/splitter_horizontal.svg);
+}
