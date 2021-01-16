@@ -39,6 +39,8 @@ RESOURCES += \
   - `chongying::MouseEventFilter` 提供了部分鼠标事件过滤器 如：中键点击等
 - `cy/tool/RegExpValidator.*`
   - `chongying::RegExpValidator` 字符串正则验证纠错器 用于输入框的验证与自动纠错
+- `cy/tool/StringFormatter.*`
+  - `chongying::StringFormatter` 字符串格式化器 允许在字符串中使用命名变量占位 然后格式化
 - `cy/view/HeaderView.*`
   - `chongying::HeaderView` 头部视图 提供了自动调整行列宽高、隐藏行列等功能
 - `cy/widget/IconButton.*`

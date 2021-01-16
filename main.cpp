@@ -1,4 +1,7 @@
+#include <cy/tool/StringFormatter.h>
+
 #include <QApplication>
+#include <QDebug>
 #include <QDir>
 #include <QTranslator>
 
@@ -46,5 +49,71 @@ int main(int argc, char *argv[]) {
 
   MainWindow w;
   w.show();
+
+  // StringFormatter 使用例:
+  {
+    // 源数据可以定义一些格式化模板 他们之间可以存在依赖 但必须是后值依赖前值
+    // 允许将源数据格式化写入文件 这里使用字符串代替
+    QString file(R"(
+home            =   /home/chongying
+qt_dirpath      =   ${home}/Qt
+web_dirname     =   www
+filepath        =   ${qt_dirpath}/${filename}
+)");
+    // 使用chongying::StringFormatter::read方法可以将如上格式的定义转换为源数据
+    chongying::StringFormatter::Originals originals =
+        chongying::StringFormatter::read(file.toUtf8());
+    // 格式化器的实例化需要提供源数据 （但通常可以不实例化
+    chongying::StringFormatter formatter(originals);
+    // 定义最终变量 它通常是运行过程中产生的
+    chongying::StringFormatter::Variables variables{
+        {"filename", "test.h"},
+        {"hostname", "chongying.studio"},
+    };
+
+    {
+      // 可以使用{}代码块来限制using的作用范围
+      using chongying::operator%;
+      qDebug() << "1. 引入命名空间中的运算符重载后 直接使用%运算符格式化：";
+
+      qDebug() << "${home}/helloworld/${undefined}" % formatter;
+      // >> "/home/chongying/helloworld/${undefined}"
+
+      qDebug() << "${filepath}" % originals % variables;
+      // >> "/home/chongying/Qt/test.h"
+
+      qDebug() << "${home}/${web_dirname}/${hostname}" % formatter % variables;
+      // >> "/home/chongying/www/chongying.studio"
+
+      qDebug() << "[${date}]${name}.txt" %
+                      chongying::StringFormatter::Variables{
+                          {"date", "2021-01-16"},
+                          {"name", "SunnyDay"},
+                      };
+      // >> "[2021-01-16]SunnyDay.txt"
+    }
+    {
+      qDebug() << "2. 使用方法来格式字符串：";
+
+      qDebug() << formatter.format("${home}/helloworld/${undefined}");
+      // >> "/home/chongying/helloworld/${undefined}"
+
+      qDebug() << chongying::StringFormatter::format(
+          formatter.format("${filepath}"), variables);
+      // >> "/home/chongying/Qt/test.h"
+
+      qDebug() << formatter.withExtra("${home}/${web_dirname}/${hostname}",
+                                      variables);
+      // >> "/home/chongying/www/chongying.studio"
+
+      qDebug() << chongying::StringFormatter::format(
+          "[${date}]${name}.txt", chongying::StringFormatter::Variables{
+                                      {"date", "2021-01-16"},
+                                      {"name", "SunnyDay"},
+                                  });
+      // >> "[2021-01-16]SunnyDay.txt"
+    }
+  }
+
   return a.exec();
 }

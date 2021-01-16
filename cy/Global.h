@@ -21,19 +21,19 @@ enum ItemDataRoleChannel {
 /** @brief 扩展数据角色 */
 enum ItemDataRole {
   /** @brief 扩展数据角色::保存文件路径 (QString) */
-  FilePathRole = 0x0021 | ItemDataRoleChannel::ContainerChannel,
+  FilePathRole = 0xF011 | ItemDataRoleChannel::ContainerChannel,
   /** @brief 扩展数据角色::保存原始名称 (QString) */
-  NameRole = 0x0022 | ItemDataRoleChannel::ContainerChannel,
+  NameRole = 0xF012 | ItemDataRoleChannel::ContainerChannel,
 
   // ! HeaderView
   /** @brief 扩展数据角色::保存大小 (int) */
-  SizeRole = 0x0011 | ItemDataRoleChannel::ViewChannel,
+  SizeRole = 0xF011 | ItemDataRoleChannel::ViewChannel,
   /** @brief 扩展数据角色::保存填充宽度权重 (int) */
-  FillRole = 0x0012 | ItemDataRoleChannel::ViewChannel,
+  FillRole = 0xF012 | ItemDataRoleChannel::ViewChannel,
   /** @brief 扩展数据角色::保存是否隐藏 (bool) */
-  HideRole = 0x0021 | ItemDataRoleChannel::ViewChannel,
+  HideRole = 0xF021 | ItemDataRoleChannel::ViewChannel,
   /** @brief 扩展数据角色::保存排序值 (int) */
-  SortRole = 0x0011 | ItemDataRoleChannel::ViewChannel,
+  SortRole = 0xF031 | ItemDataRoleChannel::ViewChannel,
 };
 
 }  // namespace CyGlobal
