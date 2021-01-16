@@ -1,5 +1,5 @@
-#ifndef ICONBUTTONHEADER_H
-#define ICONBUTTONHEADER_H
+#ifndef CHONGYING_WIDGET_ICONBUTTONHEADER_H
+#define CHONGYING_WIDGET_ICONBUTTONHEADER_H
 
 #include <QWidget>
 
@@ -42,4 +42,4 @@ class IconButtonHeader : public QWidget {
 
 }  // namespace chongying
 
-#endif  // ICONBUTTONHEADER_H
+#endif  // CHONGYING_WIDGET_ICONBUTTONHEADER_H

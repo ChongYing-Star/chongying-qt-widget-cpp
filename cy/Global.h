@@ -1,5 +1,5 @@
-#ifndef GLOBAL_H
-#define GLOBAL_H
+#ifndef CHONGYING_GLOBAL_H
+#define CHONGYING_GLOBAL_H
 
 namespace chongying {
 
@@ -40,4 +40,4 @@ enum ItemDataRole {
 
 }  // namespace chongying
 
-#endif  // GLOBAL_H
+#endif  // CHONGYING_GLOBAL_H

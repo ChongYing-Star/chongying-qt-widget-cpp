@@ -1,5 +1,5 @@
-#ifndef GUICREATETOOL_H
-#define GUICREATETOOL_H
+#ifndef CHONGYING_TOOL_GUICREATETOOL_H
+#define CHONGYING_TOOL_GUICREATETOOL_H
 
 #include <QFrame>
 
@@ -19,4 +19,4 @@ QFrame *CreateLine(QFrame::Shape shape) noexcept;
 
 }  // namespace chongying
 
-#endif  // GUICREATETOOL_H
+#endif  // CHONGYING_TOOL_GUICREATETOOL_H

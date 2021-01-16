@@ -1,5 +1,5 @@
-#ifndef HEADERVIEW_H
-#define HEADERVIEW_H
+#ifndef CHONGYING_VIEW_HEADERVIEW_H
+#define CHONGYING_VIEW_HEADERVIEW_H
 
 #include <QHeaderView>
 
@@ -31,4 +31,4 @@ class HeaderView : public QHeaderView {
 
 }  // namespace chongying
 
-#endif  // HEADERVIEW_H
+#endif  // CHONGYING_VIEW_HEADERVIEW_H

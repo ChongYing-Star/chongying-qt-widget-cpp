@@ -1,5 +1,5 @@
-#ifndef MOUSEEVENTFILTER_H
-#define MOUSEEVENTFILTER_H
+#ifndef CHONGYING_TOOL_MOUSEEVENTFILTER_H
+#define CHONGYING_TOOL_MOUSEEVENTFILTER_H
 
 #include <QObject>
 
@@ -24,4 +24,4 @@ class MouseEventFilter : public QObject {
 
 }  // namespace chongying
 
-#endif  // MOUSEEVENTFILTER_H
+#endif  // CHONGYING_TOOL_MOUSEEVENTFILTER_H

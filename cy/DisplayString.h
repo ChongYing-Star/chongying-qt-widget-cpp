@@ -1,5 +1,5 @@
-#ifndef DISPLAYSTRING_H
-#define DISPLAYSTRING_H
+#ifndef CHONGYING_DISPLAYSTRING_H
+#define CHONGYING_DISPLAYSTRING_H
 
 #include <QObject>
 
@@ -44,4 +44,4 @@ class DisplayString : public QObject {
 
 }  // namespace chongying
 
-#endif  // DISPLAYSTRING_H
+#endif  // CHONGYING_DISPLAYSTRING_H

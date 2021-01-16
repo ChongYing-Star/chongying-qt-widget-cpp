@@ -1,5 +1,5 @@
-#ifndef NAMELINE_H
-#define NAMELINE_H
+#ifndef CHONGYING_WIDGET_NAMEINPUT_NAMELINE_H
+#define CHONGYING_WIDGET_NAMEINPUT_NAMELINE_H
 
 #include <QLineEdit>
 
@@ -25,4 +25,4 @@ class NameLine : public QLineEdit, public DisplayWidget {
 
 }  // namespace chongying
 
-#endif  // NAMELINE_H
+#endif  // CHONGYING_WIDGET_NAMEINPUT_NAMELINE_H

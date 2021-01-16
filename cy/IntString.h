@@ -1,5 +1,5 @@
-#ifndef INTSTRING_H
-#define INTSTRING_H
+#ifndef CHONGYING_INTSTRING_H
+#define CHONGYING_INTSTRING_H
 
 #include <QHash>
 #include <QString>
@@ -72,4 +72,4 @@ class IntString {
 
 }  // namespace chongying
 
-#endif  // INTSTRING_H
+#endif  // CHONGYING_INTSTRING_H

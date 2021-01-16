@@ -1,5 +1,5 @@
-#ifndef DISPLAYWIDGET_H
-#define DISPLAYWIDGET_H
+#ifndef CHONGYING_DISPLAYWIDGET_H
+#define CHONGYING_DISPLAYWIDGET_H
 
 namespace chongying {
 
@@ -17,4 +17,4 @@ class DisplayWidget {
 
 }  // namespace chongying
 
-#endif  // DISPLAYWIDGET_H
+#endif  // CHONGYING_DISPLAYWIDGET_H

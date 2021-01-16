@@ -1,5 +1,5 @@
-#ifndef STRINGVALIDATOR_H
-#define STRINGVALIDATOR_H
+#ifndef CHONGYING_TOOL_STRINGVALIDATOR_H
+#define CHONGYING_TOOL_STRINGVALIDATOR_H
 
 #include <QRegExpValidator>
 
@@ -38,4 +38,4 @@ class RegExpValidator : public QRegExpValidator {
 
 }  // namespace chongying
 
-#endif  // STRINGVALIDATOR_H
+#endif  // CHONGYING_TOOL_STRINGVALIDATOR_H

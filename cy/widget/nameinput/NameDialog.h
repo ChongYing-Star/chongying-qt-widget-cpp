@@ -1,5 +1,5 @@
-#ifndef NAMEDIALOG_H
-#define NAMEDIALOG_H
+#ifndef CHONGYING_WIDGET_NAMEINPUT_NAMEDIALOG_H
+#define CHONGYING_WIDGET_NAMEINPUT_NAMEDIALOG_H
 
 #include <QDialog>
 
@@ -41,4 +41,4 @@ class NameDialog : public QDialog, public DisplayWidget {
 
 }  // namespace chongying
 
-#endif  // NAMEDIALOG_H
+#endif  // CHONGYING_WIDGET_NAMEINPUT_NAMEDIALOG_H

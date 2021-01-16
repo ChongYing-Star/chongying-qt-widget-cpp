@@ -1,5 +1,5 @@
-#ifndef ICONBUTTON_H
-#define ICONBUTTON_H
+#ifndef CHONGYING_WIDGET_ICONBUTTON_H
+#define CHONGYING_WIDGET_ICONBUTTON_H
 
 #include <QPushButton>
 
@@ -52,4 +52,4 @@ class IconButton : public QPushButton {
 
 }  // namespace chongying
 
-#endif  // ICONBUTTON_H
+#endif  // CHONGYING_WIDGET_ICONBUTTON_H

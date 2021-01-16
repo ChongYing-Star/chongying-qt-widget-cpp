@@ -1,5 +1,5 @@
-#ifndef MOVEHANDLE_H
-#define MOVEHANDLE_H
+#ifndef CHONGYING_WIDGET_MOVEHANDLE_H
+#define CHONGYING_WIDGET_MOVEHANDLE_H
 
 #include <QWidget>
 
@@ -32,4 +32,4 @@ class MoveHandle : public QWidget {
 
 }  // namespace chongying
 
-#endif  // MOVEHANDLE_H
+#endif  // CHONGYING_WIDGET_MOVEHANDLE_H
