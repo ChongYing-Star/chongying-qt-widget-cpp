@@ -1,8 +1,10 @@
+#include <cy/tool/LocalSignal.h>
 #include <cy/tool/StringFormatter.h>
 
 #include <QApplication>
 #include <QDebug>
 #include <QDir>
+#include <QTimer>
 #include <QTranslator>
 
 #include "MainWindow.h"
@@ -47,6 +49,30 @@ int main(int argc, char *argv[]) {
     if (translator->load(filepath)) qApp->installTranslator(translator);
   }
 
+  // LocalSignal 使用例：
+  /** @brief 应用名 */
+  QString ApplicationName = "chongying-qt-widget-cpp";
+  /** @brief 此信号用于保证应用唯一启动 使用应用名作为连接标识 */
+  chongying::LocalSignal forOnly(ApplicationName);
+  if (!forOnly.isServer()) {
+    // 当此对象非服务器时 说明此时已有应用运行 发送激活信号
+    forOnly.sendSignal("activate");
+    // 退出应用
+    return 0;
+  }
+  // 服务端 接受激活信号 执行激活窗口操作
+  QObject::connect(&forOnly, &chongying::LocalSignal::gotSignal,
+                   [](QString signal) {
+                     if (signal == "activate") {
+                       for (QWidget *window : qApp->topLevelWidgets()) {
+                         if (qobject_cast<QMainWindow *>(window)) {
+                           if (window->isHidden()) window->show();
+                           window->raise();
+                           window->activateWindow();
+                         }
+                       }
+                     }
+                   });
   MainWindow w;
   w.show();
 

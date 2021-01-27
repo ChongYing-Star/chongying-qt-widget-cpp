@@ -12,6 +12,13 @@
 include(cy/cy.pri)
 ``````
 
+> 部分类需要使用其他模块 请在项目文件中引入
+> 如：LocalSignal需要使用网络（network）模块
+>
+> ``````QMake
+> QT+=network
+> ``````
+
 3. 引入必要的资源文件，例子：
 
 ```QMake
@@ -35,6 +42,8 @@ RESOURCES += \
 - `cy/IntString.*`
   - `chongying::IntString` 提供了整数与字符串双向绑定转换的方法 多用于枚举
 - `cy/tool/GuiCreateTool.*` 提供了创建GUI的便捷工具
+- `cy/tool/LocalSignal.*`
+  - `chongying::LocalSignal` 提供了本地信号类 用于接受来自本地进程的信号
 - `cy/tool/MouseEventFilter.*`
   - `chongying::MouseEventFilter` 提供了部分鼠标事件过滤器 如：中键点击等
 - `cy/tool/RegExpValidator.*`

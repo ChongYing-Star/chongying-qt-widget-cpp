@@ -29,9 +29,13 @@ class NameDialog : public QDialog, public DisplayWidget {
 
  public:
   explicit NameDialog(QWidget *parent = nullptr);
+  /** @brief 设置提示文本 */
   void setLabelText(const QString &text);
+  /** @brief 设置输入框文本 */
   void setTextValue(const QString &text);
+  /** @brief 获取提示文本 */
   QString labelText() const;
+  /** @brief 获取输入框文本 */
   QString textValue() const;
 
   void setupText() override;
